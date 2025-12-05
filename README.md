@@ -1,2 +1,12 @@
 # T-pdil_Interpreter
-TÜPDİL is a Python-based interpreter for a simplified Turkish programming language. It reads code from input.tup, performs compile-time validation, executes the program line by line, and writes all results to output.txt. The interpreter includes a custom execution engine, a type system supporting integers, real numbers, and text values, basic arithmetic operations using Turkish keywords, variable assignments, and a jump mechanism similar to a goto statement. It detects both compile-time and runtime errors, including invalid syntax, undefined variables, type mismatches, out-of-range jumps, and invalid arithmetic expressions. Compile-time errors stop execution before running the program, while runtime errors halt execution at the faulty line. Although the entire implementation is contained in a single Python file, it imitates the behavior of real interpreters by performing syntax checks, type analysis, and controlled execution flow. The project demonstrates language design, expression evaluation, static checking, and error handling within a Turkish-themed toy programming language.
+This project is an interpreter for a custom toy programming language called “Tüpdil,” implemented in Python. The interpreter reads a .tup input file, checks it for compile-time errors, executes valid instructions, and produces the corresponding output. It supports variable declarations, type checking, arithmetic expressions, jumps, printing, and runtime error handling according to the rules defined for the language. The interpreter also performs lexical validation, whitespace checks, and detailed error reporting, ensuring that both compile-time and runtime errors are caught accurately.
+Requirements:
+Python 3.8 or later
+A valid .tup input file (e.g., input.tup)
+No external libraries are required; the project uses only core Python features.
+How to run:
+Place input.tup and the Python interpreter script (e.g., tup_interpreter.py) in the same folder.
+Run the interpreter with:
+python3 tup_interpreter.py
+After execution, the program will create an output.txt file containing either the final output or the corresponding error message.
+The interpreter enforces all language rules, including type constraints, variable usage, expression validation, jump boundaries, and print operations. It is designed to closely follow the behavior described in the original project specification.
